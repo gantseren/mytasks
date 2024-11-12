@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>homework</title>
+</head>
+<body>
+    <div class="container">
+        <div>
+             <p id="n1"></p>
+             <p id="n2"></p>
+             <p id="n3"></p>
+             <p id="n4"></p>
+             <p id="n5"></p>
+             <P id="n6"></P>
+             <p id="sum"></p>
+        </div>
+    </div>
+    <script>
+    function sum(num1, num2, num3, num4, num5, num6){
+        if (num1 % 2 == 0) {
+          document.getElementById("n1").innerHTML = `${num1} tegsh`;
+        } else {
+          document.getElementById("n1").innerHTML = `${num1} sondgoi`;
+        }
+        if (num2 % 2 == 0) {
+          document.getElementById("n2").innerHTML = `${num2} tegsh`;
+        } else {
+          document.getElementById("n2").innerHTML = `${num2} sondgoi`;
+        }
+        if (num3 % 2 == 0) {
+          document.getElementById("n3").innerHTML = `${num3} tegsh`;
+        } else {
+          document.getElementById("n3").innerHTML = `${num3} sondgoi`;
+        }
+        if (num4 % 2 == 0) {
+          document.getElementById("n4").innerHTML = `${num4} tegsh`;
+        } else {
+          document.getElementById("n4").innerHTML = `${num4} sondgoi`;
+        }
+        if (num5 % 2 == 0) {
+          document.getElementById("n5").innerHTML = `${num5} tegsh`;
+        } else {
+          document.getElementById("n5").innerHTML = `${num5} sondgoi`;
+        }
+        if (num6 % 2 == 0) {
+          document.getElementById("n6").innerHTML = `${num6} tegsh`;
+        } else {
+          document.getElementById("n6").innerHTML = `${num6} sondgoi`;
+        }
+        if ( num2 + num3 + num6){
+            document.getElementById("sum").innerHTML = `${num2 + num3 + num6} tegsh toonii niilber`;
+        }
+      }
+
+      console.log(sum(13, 28, 32, 49, 51, 6));
+    </script>
+</body>
+</html>
